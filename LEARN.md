@@ -70,6 +70,7 @@ Now make sure the data is recorded:
 ## Minting and transferring:
 Ok, so how exactly to mint a new token?
 You have to run this:
+
 ``` near call $NFT_CONTRACT_ID nft_mint '{"token_id": "some id", "metadata": {"title": "some title", "description": "some description", "media": "a link to a media file"}, "receiver_id": "'$MAIN_ACCOUNT'"}' --accountId $MAIN_ACCOUNT --amount 0.1 ```
 
 You can populate the fields above the way you like. Do you see that --amount? You have to pay for storage on NEAR. in the media field, here you put a link for your token's media.
